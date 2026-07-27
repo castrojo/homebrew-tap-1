@@ -1,12 +1,11 @@
 cask "chairlift" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.9.1"
-  # TODO(blocked on frostyard/chairlift#53): pin per-arch sha256 from
-  # checksums.txt once the first release containing data/ files is cut.
-  sha256 :no_check
+  version "1.0.0-dev"
+  sha256 arm: "b1968ce77ea792ea14733dca26a73ac135769bf946b023e9dbc81d6f46801e10",
+         intel: "2f79ea682a358ae6bc4bd78259f125033f1b596fb9b143f9d94fa72a5fb61551"
 
-  url "https://github.com/frostyard/chairlift/releases/download/v#{version}/chairlift_#{version}_linux_#{arch}.tar.gz"
+  url "https://github.com/frostyard/chairlift/releases/download/dev/chairlift_#{version}_linux_#{arch}.tar.gz"
   name "ChairLift"
   desc "System management tool for bootc-based installations"
   homepage "https://github.com/frostyard/chairlift"
