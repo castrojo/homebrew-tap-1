@@ -3,16 +3,12 @@ cask "chairlift" do
   os linux: "linux"
 
   version "1.0.0-dev"
-  sha256 arm:          "b1968ce77ea792ea14733dca26a73ac135769bf946b023e9dbc81d6f46801e10",
-         intel:        "2f79ea682a358ae6bc4bd78259f125033f1b596fb9b143f9d94fa72a5fb61551",
-         arm64_linux:  "b1968ce77ea792ea14733dca26a73ac135769bf946b023e9dbc81d6f46801e10",
-         x86_64_linux: "2f79ea682a358ae6bc4bd78259f125033f1b596fb9b143f9d94fa72a5fb61551"
+  sha256 :no_check
+  url "https://github.com/frostyard/chairlift/releases/download/dev/chairlift_#{version}_linux_#{arch}.tar.gz"
 
   name "ChairLift"
   desc "System management tool for bootc-based installations"
   homepage "https://github.com/frostyard/chairlift"
-
-  url "https://github.com/frostyard/chairlift/releases/download/dev/chairlift_#{version}_linux_#{arch}.tar.gz"
 
   livecheck do
     url :url
