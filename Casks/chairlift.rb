@@ -4,8 +4,8 @@ cask "chairlift" do
 
   version "1.0.0-dev"
   sha256 :no_check
-  url "https://github.com/frostyard/chairlift/releases/download/dev/chairlift_#{version}_linux_#{arch}.tar.gz"
 
+  url "https://github.com/frostyard/chairlift/releases/download/dev/chairlift_#{version}_linux_#{arch}.tar.gz"
   name "ChairLift"
   desc "System management tool for bootc-based installations"
   homepage "https://github.com/frostyard/chairlift"
